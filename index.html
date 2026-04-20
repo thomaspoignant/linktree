@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thomas Poignant</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0d1117;
+      color: #e6edf3;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #30363d;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #e6edf3;
+      letter-spacing: -0.01em;
+    }
+
+    .links {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 0.875rem 1.25rem;
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      color: #e6edf3;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+    }
+
+    .link-btn:hover {
+      transform: scale(1.02);
+      border-color: #58a6ff;
+      background: #1c2333;
+    }
+
+    .link-btn:active {
+      transform: scale(0.99);
+    }
+
+    .link-btn .icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .link-btn .icon img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .link-btn .label {
+      flex: 1;
+      text-align: center;
+    }
+
+    /* spacer mirrors icon width to keep label visually centered */
+    .link-btn .spacer {
+      width: 20px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="avatar" src="https://github.com/thomaspoignant.png" alt="Thomas Poignant">
+    <h1>Thomas Poignant</h1>
+    <nav class="links">
+
+      <a class="link-btn" href="https://www.linkedin.com/in/poignantthomas/" target="_blank" rel="noopener">
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </span>
+        <span class="label">LinkedIn</span>
+        <span class="spacer"></span>
+      </a>
+
+      <a class="link-btn" href="https://gofeatureflag.org/" target="_blank" rel="noopener">
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/>
+          </svg>
+        </span>
+        <span class="label">Go Feature Flag</span>
+        <span class="spacer"></span>
+      </a>
+
+      <a class="link-btn" href="https://openfeature.dev/" target="_blank" rel="noopener">
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="9" width="22" height="6" rx="3"/>
+            <circle cx="16" cy="12" r="2" fill="currentColor" stroke="none"/>
+          </svg>
+        </span>
+        <span class="label">OpenFeature</span>
+        <span class="spacer"></span>
+      </a>
+
+      <a class="link-btn" href="https://bsky.app/profile/thomaspoignant.bsky.social" target="_blank" rel="noopener">
+        <span class="icon"><img src="https://cdn.simpleicons.org/bluesky/e6edf3" alt=""></span>
+        <span class="label">Bluesky</span>
+        <span class="spacer"></span>
+      </a>
+
+      <a class="link-btn" href="https://x.com/gofeatureflag" target="_blank" rel="noopener">
+        <span class="icon"><img src="https://cdn.simpleicons.org/x/e6edf3" alt=""></span>
+        <span class="label">X / Twitter</span>
+        <span class="spacer"></span>
+      </a>
+
+      <a class="link-btn" href="https://gensdeconfiance.com" target="_blank" rel="noopener">
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </span>
+        <span class="label">Gens de Confiance</span>
+        <span class="spacer"></span>
+      </a>
+
+    </nav>
+  </div>
+</body>
+</html>
